@@ -537,6 +537,8 @@ int FFmpegPlayer::decodeAudioToDevice(int audioIndex, int* zanting) {
 	swr_init(pSwCtx);
 
 
+	//  
+	//
 	if (SDL_OpenAudio(&pOutSpec, NULL) < 0)//步骤（2）打开音频设备 
 	{
 		printf("can't open audio.\n");
